@@ -13,18 +13,6 @@ cap.set(3, wCam)
 cap.set(4, hCam)
 
 
-
-
-#apiOn = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=buttonon&announcement=Hello%20monkey"
-#apiOff = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=buttonoff&announcement=Hello%20monkey"
-#apifu = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=fu&announcement=Hello%20monkey"
-#api1 = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=1&announcement=Hello%20monkey"
-#api2 = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=2&announcement=Hello%20monkey"
-#api3 = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=3&announcement=Hello%20monkey"
-#api4 = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=4&announcement=Hello%20monkey"
-#api5 = "https://api.voicemonkey.io/trigger?access_token=3581003073373c65e2999399ba5aae8e&secret_token=1f9f8395012086e240a4b056dfb33c68&monkey=5&announcement=Hello%20monkey"
-
-
 # folderPath = "LightImages"
 # myList = os.listdir(folderPath)
 # print(myList)
@@ -117,7 +105,7 @@ while True:
                             apiCalloff = requests.get(apic.apiOff)
                             print("Light Off")
                             print(apiCalloff)
-                            time.sleep(3)
+                            time.sleep(2)
 
             if not index_down():
                 if middle_down():
@@ -126,7 +114,7 @@ while True:
                             apiCallon = requests.get(apic.apiOn)
                             print("Light On")
                             print(apiCallon)
-                            time.sleep(3)
+                            time.sleep(2)
 
 
             # if index_down():
