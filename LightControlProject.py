@@ -70,7 +70,7 @@ while True:
                             apiCalloff = requests.get(apic.apiOff)
                             print("Light Off")
                             print(apiCalloff)
-                            time.sleep(2)
+                            #time.sleep(3)
 
             if not index_down():
                 if middle_down():
@@ -79,7 +79,7 @@ while True:
                             apiCallon = requests.get(apic.apiOn)
                             print("Light On")
                             print(apiCallon)
-                            time.sleep(2)
+                            #time.sleep(3)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
